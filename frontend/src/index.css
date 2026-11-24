@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Cores e fontes do projeto: viram classes como bg-mata-900 e font-titulo */
+@theme {
+  --font-sans: 'Barlow', sans-serif;
+  --font-titulo: 'Barlow Condensed', sans-serif;
+  --color-mata-50: #eef4f1;
+  --color-mata-100: #d8e6df;
+  --color-mata-600: #2c6b52;
+  --color-mata-700: #215542;
+  --color-mata-900: #17352a;
+  --color-trator-300: #fbd668;
+  --color-trator-400: #f5b81c;
+  --color-trator-500: #dd9f05;
+  --color-barro-50: #fbefea;
+  --color-barro-600: #b0472a;
+  --color-barro-700: #8d361f;
+}
+
+@layer base {
+  body { @apply bg-slate-100 text-slate-900 antialiased; }
+  button:not(:disabled) { @apply cursor-pointer; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-mata-600; }
+}
+
+@layer components {
+  .campo {
+    @apply w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-base text-slate-900 focus:border-mata-600 focus:outline-2 focus:outline-offset-0 focus:outline-mata-600 aria-invalid:border-barro-600;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
