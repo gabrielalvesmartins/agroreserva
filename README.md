@@ -4,8 +4,8 @@ Projeto de DSW (AV1 e AV2, 4º bimestre).
 
 | | Endereço |
 |---|---|
-| Aplicação publicada | _preencher após o deploy na Vercel_ |
-| API publicada | _preencher após o deploy no Render_ |
+| Aplicação publicada | https://agroreserva.vercel.app |
+| API publicada | https://agroreserva-api.onrender.com/api |
 
 ## Problema, público e solução
 
